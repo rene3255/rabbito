@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  acquisition_date: 2022-03-04
+  quantity: 1
+  description: MyString
+  cost: 9.99
+
+two:
+  acquisition_date: 2022-03-04
+  quantity: 1
+  description: MyString
+  cost: 9.99
