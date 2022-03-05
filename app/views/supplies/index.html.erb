@@ -1,0 +1,36 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Supplies</h1>
+
+<div id="supplies">
+
+<div id="supplies"></div>
+  <table class="table table-striped table-hover">
+    <thead class="thead-dark">
+      <tr> 
+        <th># Id</th>
+        <th>Acquisition date</th>
+        <th>Quantity</th>
+        <th>Description</th>
+        <th>Cost</th>
+       </tr>
+     </thead>   
+     <tbody>
+        <% @supplies.each do |supply| %> 
+          <tr>
+            <td><%= supply.id %></td>
+            <td><%= supply.acquisition_date%></td>
+            <td><%= supply.folio%></td>
+            <td><%= supply.quantity%></td>
+            <td><%= supply.description%></td>
+            <td><%= supply.cost%></td>
+            <td><%= link_to 'Show', supply %></td>
+            <td><%= link_to 'Edit', edit_supply_path(supply) %></td>
+            <td><%= link_to 'Destroy', supply, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>  
+         <% end %>
+      </tbody>
+  </table>  
+</div>
+
+<%= link_to "Add new supply", new_supply_path, class: "btn btn-secondary" %>
