@@ -11,31 +11,32 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="field form-group">
     <%= form.label :acquisition_date, style: "display: block" %>
-    <%= form.date_field :acquisition_date %>
+    <%= form.date_field :acquisition_date, class:"form-control" %>
   </div>
 
-  <div>
+  <div class="field form-group">
     <%= form.label :folio, style: "display: block" %>
-    <%= form.number_field :folio %>
+    <%= form.number_field :folio, class:"form-control", placeholder: "Ticket nunber or invoice" %>
   </div>
   <div>
     <%= form.label :quantity, style: "display: block" %>
-    <%= form.number_field :quantity %>
+    <%= form.number_field :quantity, class:"form-control", placeholder: "number of pieces, kilograms o liters" %>
   </div>
 
-  <div>
+  <div class="field form-group">
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, class:"form-control" %>
   </div>
 
-  <div>
+  <div class="field form-group">
     <%= form.label :cost, style: "display: block" %>
-    <%= form.text_field :cost %>
+    <%= form.text_field :cost, class:"form-control" %>
   </div>
-
-  <div>
+  <br/>
+  <div class="btn btn-secundary">
     <%= form.submit %>
   </div>
+  
 <% end %>

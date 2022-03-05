@@ -22,7 +22,12 @@
   <body>
     <section class="rabbito">
       <%= render 'shared/header' %>
-      <div class="container"> 
+      <div class="container">
+
+        <% if notice %>
+          <br/>
+          <%= render 'shared/alerts' %>
+        <% end %>
         <%= yield %>
       </div>
     </section>    

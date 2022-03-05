@@ -13,10 +13,11 @@
 
   <div>
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, class:"form-control", placeholder: "Breed's name sample: New Zeland" %>
   </div>
 
-  <div>
+  <div class="btn btn-secundary">
     <%= form.submit %>
   </div>
+  
 <% end %>

@@ -2,9 +2,10 @@
 
 <%= render "form", supply: @supply %>
 
-<br>
+
 
 <div>
-  <%= link_to "Show this supply", @supply %> |
-  <%= link_to "Back to supplies", supplies_path %>
+  <%= link_to "Show this supply", @supply, class: "btn btn-dark " %> |
+
+  <%= link_to "Back to supplies", supplies_path, class: "btn btn-dark " %>
 </div>

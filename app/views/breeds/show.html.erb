@@ -1,4 +1,4 @@
-<p style="color: green"><%= notice %></p>
+
 
 <%= render @breed %>
 
@@ -6,5 +6,5 @@
   <%= link_to "Edit this breed", edit_breed_path(@breed) %> |
   <%= link_to "Back to breeds", breeds_path %>
 
-  <%= button_to "Destroy this breed", @breed, method: :delete %>
+  <%= button_to "Delete this breed", @breed, method: :delete %>
 </div>
