@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  breed_date: 2022-03-08
+  buck: MyString
+  nest_box_date: 2022-03-08
+  due_date: 2022-03-08
+  kindled_date: 2022-03-08
+  born_alive: false
+  born_dead: false
+  kits_weaned: 1
+  eight_week_weight: 9.99
+  comments: MyString
+  rabbit: one
+
+two:
+  breed_date: 2022-03-08
+  buck: MyString
+  nest_box_date: 2022-03-08
+  due_date: 2022-03-08
+  kindled_date: 2022-03-08
+  born_alive: false
+  born_dead: false
+  kits_weaned: 1
+  eight_week_weight: 9.99
+  comments: MyString
+  rabbit: two

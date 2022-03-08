@@ -1,0 +1,72 @@
+<%= form_with(model: doerabbit) do |form| %>
+  <% if doerabbit.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(doerabbit.errors.count, "error") %> prohibited this doerabbit from being saved:</h2>
+
+      <ul>
+        <% doerabbit.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :breed_date, style: "display: block" %>
+    <%= form.date_field :breed_date %>
+  </div>
+
+  <div>
+    <%= form.label :buck, style: "display: block" %>
+    <%= form.text_field :buck %>
+  </div>
+
+  <div>
+    <%= form.label :nest_box_date, style: "display: block" %>
+    <%= form.date_field :nest_box_date %>
+  </div>
+
+  <div>
+    <%= form.label :due_date, style: "display: block" %>
+    <%= form.date_field :due_date %>
+  </div>
+
+  <div>
+    <%= form.label :kindled_date, style: "display: block" %>
+    <%= form.date_field :kindled_date %>
+  </div>
+
+  <div>
+    <%= form.label :born_alive, style: "display: block" %>
+    <%= form.check_box :born_alive %>
+  </div>
+
+  <div>
+    <%= form.label :born_dead, style: "display: block" %>
+    <%= form.check_box :born_dead %>
+  </div>
+
+  <div>
+    <%= form.label :kits_weaned, style: "display: block" %>
+    <%= form.number_field :kits_weaned %>
+  </div>
+
+  <div>
+    <%= form.label :eight_week_weight, style: "display: block" %>
+    <%= form.text_field :eight_week_weight %>
+  </div>
+
+  <div>
+    <%= form.label :comments, style: "display: block" %>
+    <%= form.text_field :comments %>
+  </div>
+
+  <div>
+    <%= form.label :rabbit_id, style: "display: block" %>
+    <%= form.text_field :rabbit_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

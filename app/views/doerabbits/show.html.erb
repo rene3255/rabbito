@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @doerabbit %>
+
+<div>
+  <%= link_to "Edit this doerabbit", edit_doerabbit_path(@doerabbit) %> |
+  <%= link_to "Back to doerabbits", doerabbits_path %>
+
+  <%= button_to "Destroy this doerabbit", @doerabbit, method: :delete %>
+</div>
