@@ -32,8 +32,10 @@
   </div>
 
   <div>
-    <%= form.label :breed_id, style: "display: block" %>
-    <%= form.number_field :breed_id %>
+   <!-- <%= form.label :breed_id, style: "display: block" %> -->
+
+    <%= form.collection_select(:breed_id, Breed.all, :id, :description, { :prompt => 'Select a Breed', :selected => @rabbit.breed_id }, { class: 'form-control' }) %>  
+    <!-- <%= form.number_field :breed_id %> -->
   </div>
 
   <div>
